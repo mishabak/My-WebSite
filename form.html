@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="IMG/">
+</head>
+<body style="background: #e4e4e2">
+    <header  class=" top-bar  ">
+        <div >          
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <img class="my-logo "  src="IMG/Screenshot__168_-removebg-preview.png" alt="">
+                <h4 class="msb">MSB</h4>                
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>              
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">                      
+                 <li class="nav-item  ">
+                     <a class="nav-link" href="index.html"><h6  class="widtha">Home</h6></a>
+                    </li>
+                  <li class="nav-item ">
+                      <a class="nav-link" href="#"><h6 class="widtha">About</h6></a>
+                     </li>
+                     <li class="nav-item ">
+                     <a class="nav-link" href="#"><h6 class="widtha">Contact me</h6></a>
+                    </li>              
+                  </ul>                 
+                </div>
+              </nav>
+        </div>
+    </header>   
+    <section style="padding-top: 200px;" >
+        <div  class="container-fluid" >
+            <form id="submit-form"  >
+                <div class="form-row">
+                  <div class="form-group col-md-6 widtha">
+                    <label style="font-size:22px" >Name</label>
+                    <input type="text" class="form-control" name="name" id="inputname" placeholder=" Name">
+                    <label style="display: none; color: red;" id="errorname">Enter Your Name</label>
+                  </div>
+                  <div class="form-group col-md-6 widtha">
+                    <label style="font-size:22px">Email</label>
+                    <input name="email" type="email" class="form-control" id="inputemail" placeholder=" Email">
+                    <label style="display: none; color: red;" id="erroremail">Enter valid Email</label>
+                  </div>
+                </div>
+                <div class="form-group widtha ">
+                  <label 
+                   style="font-size:22px" >Address</label>
+                  <input name="place" type="text" class="form-control" id="inputaddress" placeholder=" Address">
+                  <label style="display: none; color: red;" id="erroraddress">enter address</label>
+                </div>
+               
+                <div class="form-row">
+                  <div class="form-group col-md-6 widtha">
+                    <label style="font-size:22px" >City</label>
+                    <input name="city" type="text" class="form-control" id="inputcity">
+                    <label style="display: none; color: red;" id="errorcity">Enter your City</label>
+                  </div>
+                  <div class="form-group col-md-6 widtha">
+                    <label style="font-size:22px">State</label>
+                    <select name="state" id="inputState" class="form-control">
+                      <option selected>Choose...</option>                      
+                            <option>Andhra Pradesh</option>
+                            <option>Arunachal Pradesh</option>
+                            <option>Assam</option>
+                            <option>Bihar</option>
+                            <option>Chhattisgarh</option>
+                            <option>Goa</option>
+                            <option>Gujarat</option>
+                            <option>Haryana</option>
+                            <option>Himachal Pradesh</option>
+                            <option>Jharkhand</option>                                                        
+                            <option>Karnataka</option>
+                            <option>Kerala</option>
+                            <option>Madhya Pradesh</option>    
+                            <option>Maharashtra</option>
+                            <option>Manipur</option>
+                            <option>Meghalaya</option>
+                            <option>Mizoram</option>
+                            <option>Nagaland</option>
+                            <option>Odisha</option>
+                            <option>Punjab</option>
+                            <option>Rajasthan</option>
+                            <option>Sikkim</option>
+                            <option>Tamil Nadu</option>
+                            <option>Telangana</option>
+                            <option>Tripura</option>
+                            <option>Uttar Pradesh</option>
+                            <option>Uttarakhand</option>
+                            <option>West Bengal</option>                                                                      
+                    </select>
+                    <label style="display: none; color: red;" id="">please select </label>
+                  </div>
+                  
+                </div>
+                <div class="row ">
+                    <div class="form-group col-md-6 widtha">
+                        <label style="font-size:22px" >Mobile</label>
+                        <input name="phone" type="text" class="form-control" id="inputnumber" placeholder=" Mobile">
+                        <label style="display: none; color: red;" id="errornumber">Enter Your Number</label>
+                      </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 widtha">
+                        <label style="font-size:22px">
+                            Subject
+                        </label> 
+                        <textarea class="form-control" name="message" id="inputsubject" rows="6" value="post">
+            
+                        </textarea>
+                        
+                        
+                    </div>
+                   <div style="padding-top: 60px;"  class="col-md-6 text-center">
+                    
+                      
+                      <button id="btn" value="submit" type="submit" class=" btn btn-success">submit</button>
+        
+                   </div>
+    
+                </div>
+    
+                
+                
+              </form>
+
+            
+        </div>
+       
+
+    </section>
+   
+   
+   
+
+   
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script src="file.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
